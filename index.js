@@ -1,12 +1,11 @@
 let meuHeroi = "coconauta"
-let xp = 8000
+let xp = 10001
 let defaultRank = "iniciante";
 
 switch (xp) {
     case 1000:
         console.log("Seu rank é: iniciante")
         break;
-
         case 2000:
             console.log("Seu rank é: bronze")
             break;
@@ -22,10 +21,13 @@ switch (xp) {
         case 9000:
             console.log("Seu rank é: diamante")
             break;
-        case 10000:
+        case xp >= 10000 && xp < 10001:
             console.log("Seu rank é: lendário")
             break;
-            default:
-            console.log("Você não possui um rank")
+        case xp >= 10001 && xp < 12000:
+            console.log(meuHeroi + " Seu rank é: Campeão ")
             break;
+            default:
+                console.log( "Você não possui um rank ")
+                break;               
 }
